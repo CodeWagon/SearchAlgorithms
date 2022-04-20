@@ -10,7 +10,7 @@ using namespace std;
 // Array length - n
 // It returns index of 'x' in given array 'arr' if present,
 // otherwise -1
-int binarySearch(int arr[], int l, int r, int x)
+int interpolationSearch(int arr[], int l, int r, int x)
 {
     // condition to make sure key is in the subarray of 
     // selected by the formula
@@ -49,7 +49,7 @@ int main(void)
     // in the array
     int n = sizeof(arr) / sizeof(arr[0]);
   
-    int result = binarySearch(arr, 0, n - 1, x);
+    int result = interpolationSearch(arr, 0, n - 1, x);
     
     // Printing the result
     if(result == -1) {
